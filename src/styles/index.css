@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: "YekanBakh", sans-serif;
+  }
+}
+
+@theme {
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-heavy: 800;
+  --font-weight-fat: 900;
+}
