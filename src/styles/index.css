@@ -18,3 +18,17 @@
   --font-weight-heavy: 800;
   --font-weight-fat: 900;
 }
+
+.post-body p {
+  line-height: 1.7;
+}
+
+.post-body p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.post-body h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 8px 0;
+}

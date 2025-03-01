@@ -31,3 +31,24 @@ export const GET_POSTS = gql`
     }
   }
 `;
+
+export const GET_POST_BY_SLUG = gql`
+  query getPost($slug: String!) {
+    post(where: { slug: $slug }) {
+      title
+      cover {
+        url
+      }
+      body {
+        html
+      }
+      author {
+        name
+        avatar {
+          url
+        }
+        slug
+      }
+    }
+  }
+`;
